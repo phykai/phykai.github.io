@@ -4,19 +4,15 @@
   <meta charset="UTF-8">
   <title>Kai Zhang</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="style.css">
-
-  <!-- Font Awesome icons -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-
 <body>
-  <header class="navbar">
-    <div class="nav-container">
-      <div class="site-name">Kai Zhang</div>
 
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="site-title">Kai Zhang</div>
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="team.html">Team</a>
@@ -25,7 +21,7 @@
     </div>
   </header>
 
-  <main class="page">
+  <main class="site-container home-grid">
 
     <aside class="sidebar">
       <img src="kai.jpg" alt="Kai Zhang" class="profile-photo">
@@ -33,13 +29,11 @@
       <h2>Kai Zhang</h2>
 
       <p class="side-item">
-        <i class="fa-solid fa-location-dot"></i>
-        Hangzhou, CN
+        <i class="fa-solid fa-location-dot"></i>Hangzhou, CN
       </p>
 
       <p class="side-item">
-        <i class="fa-solid fa-building-columns"></i>
-        Zhejiang University
+        <i class="fa-solid fa-building-columns"></i>Zhejiang University
       </p>
 
       <p class="side-item">
@@ -62,7 +56,7 @@
       </p>
     </aside>
 
-    <section class="content">
+    <section class="main-content">
 
       <section>
         <h1>Biography</h1>
@@ -78,138 +72,125 @@
         <p>
           His research focuses on non-Hermitian physics and many-body dynamics
           in open quantum systems. More broadly, he is interested in how
-          dissipation/decoherence, non-reciprocity, and gain&ndash;loss processes
-          can give rise to unconventional quantum phases and dynamical
-          phenomena. His work also aims to develop theoretical frameworks for
-          understanding novel structures in band topology and emergent behavior
-          in correlated and non-equilibrium quantum matter.
+          dissipation/decoherence, non-reciprocity, and gain–loss processes can
+          give rise to unconventional quantum phases and dynamical phenomena.
+          His work also aims to develop theoretical frameworks for understanding
+          novel structures in band topology and emergent behavior in correlated
+          and non-equilibrium quantum matter.
         </p>
       </section>
 
       <section>
         <h1>Research Interest</h1>
+
         <p>
-          Non-Hermitian physics; Open quantum systems; Topological phases of
-          matter; Non-equilibrium quantum dynamics.
+          Non-Hermitian physics; Open quantum systems; Topological phases of matter;
+          Non-equilibrium quantum dynamics.
         </p>
       </section>
-    <section class="highlighted-works">
-  <h1>Highlighted Works</h1>
 
-  <div class="work-item">
-    <h2>
-      <span class="work-number">5.</span>
-      <a href="https://link.aps.org/doi/10.1103/cwwd-bclc" target="_blank">
-        Algebraic non-Hermitian skin effect and generalized Fermi surface formula in arbitrary dimensions
-      </a>
-    </h2>
+      <section class="highlighted-works">
+        <h1>Highlighted Works</h1>
 
-    <p class="work-authors">
-      <strong>Kai Zhang</strong>, Chang Shu, and Kai Sun,
-      <em>Phys. Rev. X</em> <strong>15</strong>, 031039 (2025).
-    </p>
+        <div class="work-item">
+          <h2>
+            <span class="work-number">5.</span>
+            <a href="https://journals.aps.org/prx/abstract/10.1103/PhysRevX.15.031039" target="_blank">
+              Algebraic non-Hermitian skin effect and generalized Fermi surface formula in arbitrary dimensions
+            </a>
+          </h2>
+          <p class="work-authors">
+            <strong>Kai Zhang</strong>, Chang Shu, and Kai Sun,
+            <em>Phys. Rev. X</em> <strong>15</strong>, 031039 (2025).
+          </p>
+          <p class="work-summary">
+            We uncover the quasi-long-range algebraic localization of the higher-dimensional
+            skin effect and establish the generalized Fermi surface framework.
+          </p>
+        </div>
 
-    <p class="work-summary">
-      We uncover the quasi-long-range algebraic localization of the higher-dimensional
-      skin effect and establish the generalized Fermi surface framework.
-    </p>
-  </div>
+        <div class="work-item">
+          <h2>
+            <span class="work-number">4.</span>
+            <a href="https://link.aps.org/doi/10.1103/PhysRevLett.131.036402" target="_blank">
+              Dynamical degeneracy splitting and directional invisibility in non-Hermitian systems
+            </a>
+          </h2>
+          <p class="work-authors">
+            <strong>Kai Zhang</strong>, Chen Fang, Zhesen Yang,
+            <em>Phys. Rev. Lett.</em> <strong>131</strong>, 036402 (2023).
+          </p>
+          <p class="work-summary">
+            We establish dynamical degeneracy splitting as a framework linking the
+            frequency-resolved non-Hermitian skin effect to anomalous Green's-function
+            behavior, spectral broadening, scattering, and wave-packet directional
+            invisibility in higher-dimensional non-Hermitian systems.
+          </p>
+        </div>
 
-  <div class="work-item">
-    <h2>
-      <span class="work-number">4.</span>
-      <a href="https://link.aps.org/doi/10.1103/PhysRevLett.131.036402" target="_blank">
-        Dynamical degeneracy splitting and directional invisibility in non-Hermitian systems
-      </a>
-    </h2>
+        <div class="work-item">
+          <h2>
+            <span class="work-number">3.</span>
+            <a href="https://www.nature.com/articles/s41467-022-30161-6" target="_blank">
+              Universal non-Hermitian skin effect in two and higher dimensions
+            </a>
+          </h2>
+          <p class="work-authors">
+            <strong>Kai Zhang</strong>, Zhesen Yang, Chen Fang,
+            <em>Nat. Commun.</em> <strong>13</strong>, 2496 (2022).
+          </p>
+          <p class="work-summary">
+            We establish a universal spectral theorem showing that non-Hermitian Hamiltonians
+            without the non-Hermitian skin effect occupy a measure-zero subset of parameter space.
+            We further uncover a new phenomenon, termed the geometry-dependent skin effect,
+            in which wave functions generically accumulate at the boundaries of open polygons
+            but become extended under special geometries selected by symmetry.
+          </p>
+        </div>
 
-    <p class="work-authors">
-      <strong>Kai Zhang</strong>, Chen Fang, Zhesen Yang,
-      <em>Phys. Rev. Lett.</em> <strong>131</strong>, 036402 (2023).
-    </p>
+        <div class="work-item">
+          <h2>
+            <span class="work-number">2.</span>
+            <a href="https://link.aps.org/doi/10.1103/PhysRevLett.125.126402" target="_blank">
+              Correspondence between winding numbers and skin modes in non-Hermitian systems
+            </a>
+          </h2>
+          <p class="work-authors">
+            <strong>Kai Zhang</strong><sup>#</sup>, Zhesen Yang<sup>#</sup>, Chen Fang,
+            <em>Phys. Rev. Lett.</em> <strong>125</strong>, 126402 (2020).
+          </p>
+          <p class="work-summary">
+            We establish a correspondence between nonzero Bloch-spectrum winding under periodic
+            boundary conditions and the emergence of the non-Hermitian skin effect under open
+            boundary conditions in one dimension. This work reveals the topological origin of
+            the non-Hermitian skin effect and provides a simple criterion for its occurrence.
+          </p>
+        </div>
 
-    <p class="work-summary">
-      We establish dynamical degeneracy splitting as a framework linking the
-      frequency-resolved non-Hermitian skin effect to anomalous Green's-function
-      behavior, spectral broadening, scattering, and wave-packet directional
-      invisibility in higher-dimensional non-Hermitian systems.
-    </p>
-  </div>
+        <div class="work-item">
+          <h2>
+            <span class="work-number">1.</span>
+            <a href="https://link.aps.org/doi/10.1103/PhysRevLett.125.226402" target="_blank">
+              Non-Hermitian bulk-boundary correspondence and auxiliary generalized Brillouin zone theory
+            </a>
+          </h2>
+          <p class="work-authors">
+            Zhesen Yang<sup>#</sup>, <strong>Kai Zhang</strong><sup>#</sup>,
+            Chen Fang, Jiangping Hu,
+            <em>Phys. Rev. Lett.</em> <strong>125</strong>, 226402 (2020).
+          </p>
+          <p class="work-summary">
+            We develop a systematic analytic method for calculating the generalized Brillouin
+            zone and open-boundary continuum spectrum of generic one-dimensional non-Hermitian
+            band systems, rendering a broad class of non-Hermitian lattice Hamiltonians
+            analytically tractable.
+          </p>
+        </div>
 
-  <div class="work-item">
-    <h2>
-      <span class="work-number">3.</span>
-      <a href="https://www.nature.com/articles/s41467-022-30161-6" target="_blank">
-        Universal non-Hermitian skin effect in two and higher dimensions
-      </a>
-    </h2>
-
-    <p class="work-authors">
-      <strong>Kai Zhang</strong>, Zhesen Yang, Chen Fang,
-      <em>Nat. Commun.</em> <strong>13</strong>, 2496 (2022).
-    </p>
-
-    <p class="work-summary">
-      We establish a universal spectral theorem showing that non-Hermitian
-      Hamiltonians without the non-Hermitian skin effect occupy a measure-zero
-      subset of parameter space. We further uncover the geometry-dependent skin
-      effect, in which wave functions generically accumulate at the boundaries
-      of open polygons but become extended under special geometries selected by
-      symmetry.
-    </p>
-  </div>
-
-  <div class="work-item">
-    <h2>
-      <span class="work-number">2.</span>
-      <a href="https://link.aps.org/doi/10.1103/PhysRevLett.125.126402" target="_blank">
-        Correspondence between winding numbers and skin modes in non-Hermitian systems
-      </a>
-    </h2>
-
-    <p class="work-authors">
-      <strong>Kai Zhang</strong><sup>#</sup>, Zhesen Yang<sup>#</sup>, Chen Fang,
-      <em>Phys. Rev. Lett.</em> <strong>125</strong>, 126402 (2020).
-    </p>
-
-    <p class="work-summary">
-      We establish a correspondence between nonzero Bloch-spectrum winding under
-      periodic boundary conditions and the emergence of the non-Hermitian skin
-      effect under open boundary conditions in one dimension. This work reveals
-      the topological origin of the non-Hermitian skin effect and provides a
-      simple criterion for its occurrence.
-    </p>
-  </div>
-
-  <div class="work-item">
-    <h2>
-      <span class="work-number">1.</span>
-      <a href="https://link.aps.org/doi/10.1103/PhysRevLett.125.226402" target="_blank">
-        Non-Hermitian bulk-boundary correspondence and auxiliary generalized Brillouin zone theory
-      </a>
-    </h2>
-
-    <p class="work-authors">
-      Zhesen Yang<sup>#</sup>, <strong>Kai Zhang</strong><sup>#</sup>,
-      Chen Fang, Jiangping Hu,
-      <em>Phys. Rev. Lett.</em> <strong>125</strong>, 226402 (2020).
-    </p>
-
-    <p class="work-summary">
-      We develop a systematic analytic method for calculating the generalized
-      Brillouin zone and open-boundary continuum spectrum of generic
-      one-dimensional non-Hermitian band systems, rendering a broad class of
-      non-Hermitian lattice Hamiltonians analytically tractable.
-    </p>
-  </div>
-
-  <p class="note">
-    <sup>#</sup> Equal contribution.
-  </p>
-</section>
+        <p class="note"><sup>#</sup> Equal contribution.</p>
+      </section>
 
     </section>
-
   </main>
 
 </body>

@@ -1,66 +1,78 @@
+/* Global */
 body {
   margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: #333;
-  background-color: #fafafa;
+  color: #3f4448;
+  background: #ffffff;
 }
 
 a {
-  color: #2a7dbf;
-  text-decoration: none;
-}
-
-a:hover {
+  color: #2793c7;
   text-decoration: underline;
 }
 
-/* Top navigation */
+a:hover {
+  color: #16729c;
+}
+
+/* Top navigation bar */
 .topbar {
-  background: #f5f5f5;
-  border-bottom: 1px solid #ddd;
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #eeeeee;
+  background: #ffffff;
 }
 
 .topbar-inner {
-  max-width: 1200px;
+  max-width: 980px;
+  height: 70px;
   margin: 0 auto;
-  padding: 0 40px;
-  height: 78px;
+  padding: 0 20px;
+
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   box-sizing: border-box;
 }
 
 .site-title {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
-  color: #444;
+  color: #3f4448;
+  margin-right: 70px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 38px;
 }
 
 .nav-links a {
-  margin-left: 34px;
-  font-size: 18px;
-  color: #555;
+  font-size: 16px;
   font-weight: 500;
-}
-
-.nav-links a:hover {
-  color: #111;
+  color: #3f4448;
   text-decoration: none;
 }
 
-/* Shared page container: same margin for all pages */
+.nav-links a:hover {
+  color: #2793c7;
+  text-decoration: none;
+}
+
+/* Main layout */
 .site-container {
-  max-width: 1200px;
+  max-width: 980px;
   margin: 0 auto;
-  padding: 56px 40px 72px 40px;
+  padding: 36px 20px 70px 20px;
   box-sizing: border-box;
 }
 
 /* Homepage two-column layout */
 .home-grid {
   display: grid;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 190px 1fr;
   column-gap: 70px;
   align-items: start;
 }
@@ -71,156 +83,214 @@ a:hover {
 }
 
 .profile-photo {
-  width: 220px;
-  height: 220px;
+  width: 170px;
+  height: 230px;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 50%;
+  border: 1px solid #dddddd;
+  padding: 5px;
+  background: #ffffff;
   display: block;
-  margin-bottom: 24px;
-  border: 1px solid #ddd;
+  margin-bottom: 18px;
 }
 
 .sidebar h2 {
-  font-size: 22px;
-  margin: 0 0 18px 0;
-  color: #333;
+  font-size: 17px;
+  line-height: 1.2;
+  margin: 0 0 4px 0;
+  color: #3f4448;
 }
 
 .side-item {
-  margin: 14px 0;
-  font-size: 16px;
-  color: #555;
+  font-size: 13px;
+  line-height: 1.35;
+  margin: 9px 0;
+  color: #3f4448;
 }
 
 .side-item i {
-  width: 20px;
-  margin-right: 8px;
-  color: #444;
+  width: 18px;
+  margin-right: 4px;
+  color: #3f4448;
+}
+
+.side-item a {
+  color: #3f4448;
+  text-decoration: none;
+}
+
+.side-item a:hover {
+  color: #2793c7;
+  text-decoration: none;
 }
 
 /* Main content */
 .main-content {
+  max-width: 680px;
   min-width: 0;
 }
 
 .main-content section {
-  margin-bottom: 44px;
+  margin-bottom: 28px;
 }
 
 h1 {
-  font-size: 38px;
-  margin: 0 0 22px 0;
-  color: #333;
+  font-size: 26px;
+  line-height: 1.25;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  color: #3f4448;
 }
 
 h2 {
-  font-size: 22px;
-  margin: 0 0 10px 0;
-  color: #333;
+  font-size: 17px;
+  line-height: 1.35;
+  font-weight: 700;
+  margin: 20px 0 6px 0;
+  color: #3f4448;
 }
 
-p, li {
-  font-size: 18px;
-  line-height: 1.75;
-  color: #444;
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 6px 0 12px 0;
+  color: #3f4448;
 }
 
 ul {
-  padding-left: 26px;
-  margin-top: 8px;
+  margin-top: 6px;
+  padding-left: 24px;
 }
 
-/* Generic inner content block for Team / Research */
+li {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+/* Single-column pages: Team and Research */
 .page-content {
-  max-width: 900px;
+  max-width: 760px;
 }
 
 .page-content section {
-  margin-bottom: 42px;
+  margin-bottom: 30px;
 }
 
-/* Highlighted works on homepage */
-.highlighted-works {
+/* Research image block, if used */
+.research-block {
+  display: grid;
+  grid-template-columns: 1fr 210px;
+  column-gap: 36px;
+  align-items: start;
+}
+
+.research-image {
+  width: 210px;
+  border-radius: 8px;
   margin-top: 10px;
 }
 
+/* Highlighted works */
+.highlighted-works {
+  margin-top: 28px;
+}
+
 .work-item {
-  margin-bottom: 34px;
-  padding-bottom: 22px;
-  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 26px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .work-item h2 {
-  font-size: 22px;
-  line-height: 1.45;
-  margin-bottom: 10px;
-}
-
-.work-number {
-  color: #333;
-  margin-right: 6px;
+  font-size: 17px;
+  line-height: 1.4;
+  margin: 0 0 7px 0;
   font-weight: 700;
 }
 
+.work-number {
+  color: #3f4448;
+  margin-right: 4px;
+}
+
 .work-item h2 a {
-  color: #333;
+  color: #3f4448;
   text-decoration: none;
 }
 
 .work-item h2 a:hover {
-  color: #2a7dbf;
+  color: #2793c7;
   text-decoration: underline;
 }
 
 .work-authors {
-  font-size: 17px;
-  line-height: 1.65;
-  margin: 8px 0;
-  color: #444;
+  font-size: 15px;
+  line-height: 1.45;
+  margin: 5px 0;
+  color: #3f4448;
 }
 
 .work-summary {
-  font-size: 17px;
-  line-height: 1.75;
-  margin: 8px 0 0 0;
-  color: #555;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 6px 0 0 0;
+  color: #4d5358;
 }
 
 .note {
-  font-size: 15px;
-  color: #777;
+  font-size: 13px;
+  color: #666666;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
+/* Mobile version */
+@media (max-width: 780px) {
+  .topbar {
+    height: auto;
+  }
+
   .topbar-inner {
+    height: auto;
+    padding: 16px 20px;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    height: auto;
-    padding: 18px 24px;
   }
 
   .site-title {
+    margin-right: 0;
     margin-bottom: 12px;
   }
 
-  .nav-links a {
-    margin: 0 20px 0 0;
-    display: inline-block;
+  .nav-links {
+    gap: 22px;
+    flex-wrap: wrap;
   }
 
   .site-container {
-    padding: 36px 24px 52px 24px;
+    padding: 30px 22px 60px 22px;
   }
 
   .home-grid {
     grid-template-columns: 1fr;
-    row-gap: 36px;
+    row-gap: 34px;
   }
 
   .profile-photo {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 210px;
+  }
+
+  .main-content {
+    max-width: 100%;
+  }
+
+  .research-block {
+    grid-template-columns: 1fr;
+  }
+
+  .research-image {
+    width: 100%;
+    max-width: 320px;
+    margin-top: 18px;
   }
 }

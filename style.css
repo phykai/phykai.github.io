@@ -127,3 +127,54 @@ a {
   font-size: 16px;
   color: #666;
 }
+
+.highlighted-works {
+  margin-top: 48px;
+}
+
+.work-item {
+  margin-bottom: 34px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.work-item h2 {
+  font-size: 20px;
+  line-height: 1.35;
+  margin: 0 0 8px 0;
+  font-weight: 700;
+}
+
+.work-number {
+  color: #333;
+  margin-right: 4px;
+}
+
+.work-item h2 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.work-item h2 a:hover {
+  color: #2a9fd6;
+  text-decoration: underline;
+}
+
+.work-authors {
+  font-size: 17px;
+  line-height: 1.45;
+  margin: 6px 0;
+  color: #444;
+}
+
+.work-summary {
+  font-size: 17px;
+  line-height: 1.55;
+  margin: 8px 0 0 0;
+  color: #555;
+}
+
+.note {
+  font-size: 15px;
+  color: #666;
+}

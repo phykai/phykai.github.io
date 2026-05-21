@@ -98,3 +98,32 @@ a {
     align-items: flex-start;
   }
 }
+
+.work-item {
+  margin-bottom: 30px;
+}
+
+.work-item h2 {
+  font-size: 21px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.work-item h2 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.work-item h2 a:hover {
+  color: #2a9fd6;
+  text-decoration: underline;
+}
+
+.work-item p {
+  margin: 6px 0 10px 0;
+}
+
+.note {
+  font-size: 16px;
+  color: #666;
+}
